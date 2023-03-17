@@ -941,11 +941,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1008cee1dbdecd8469c649fbba0e5332, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f74ac4951579a547ababe372dd31c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1789997620}
-  offset: {x: -2, y: 0, z: -2}
+  offset: {x: 0, y: -5, z: -10}
   damping: 0
 --- !u!1 &553211888
 GameObject:
