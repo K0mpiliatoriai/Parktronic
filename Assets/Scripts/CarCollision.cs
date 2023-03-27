@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class CarCollision : MonoBehaviour
 {
-    public Health health;
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Car")
+        if (collision.isTrigger)
         {
             CarManager.IsGameFailed = true;
         }
