@@ -8,6 +8,8 @@ public class CarManager : MonoBehaviour
     public static bool IsGameFailed;
     public GameObject gameFailedScreen;
     public GameObject gameWonScreen;
+    public GameObject healthBar;
+    public GameObject pauseButton;
     public static bool LowerRightPoint;
     public static bool UpperLeftPoint;
     public static bool UpperRightPoint;
@@ -29,11 +31,15 @@ public class CarManager : MonoBehaviour
         {
             Time.timeScale = 0;
             gameFailedScreen.SetActive(true);
+            healthBar.SetActive(false);
+            pauseButton.SetActive(false);
         }
         else if (LowerLeftPoint && UpperLeftPoint && LowerRightPoint && UpperRightPoint)
         {
             Time.timeScale = 0;
             gameWonScreen.SetActive(true);
+            healthBar.SetActive(false);
+            pauseButton.SetActive(false);
         }
     }
 
@@ -45,5 +51,7 @@ public class CarManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         gameWonScreen.SetActive(false);
+        healthBar.SetActive(false);
+        pauseButton.SetActive(false);
     }
 }
