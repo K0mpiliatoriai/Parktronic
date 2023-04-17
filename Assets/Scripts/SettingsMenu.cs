@@ -17,8 +17,8 @@ public class SettingsMenu : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
     }
     //Controls game Audio
-    public static void SetVolume(float volume) 
+    public void SetVolume(float volume) 
     {
-        
+        mainMixer.SetFloat("Volume", volume);
     }
 }
