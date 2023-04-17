@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 45933231}
   - component: {fileID: 45933234}
   - component: {fileID: 45933233}
+  - component: {fileID: 45933235}
   - component: {fileID: 45933232}
   m_Layer: 5
   m_Name: ParkButton
@@ -382,6 +383,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45933230}
   m_CullTransparentMesh: 1
+--- !u!114 &45933235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45933230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401d85cd90e90dc4e80dabc266c7a4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  endColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  speed: 1
 --- !u!1 &184702983
 GameObject:
   m_ObjectHideFlags: 0
