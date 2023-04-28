@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
         if (collision.gameObject.tag == "Car")
         {
             TakeDamage(1);
+            
         }
     }
 
