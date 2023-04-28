@@ -6,6 +6,9 @@ TagManager:
   tags:
   - obstacle
   - Car
+  - explotion1
+  - explotion2
+  - Obstacle
   layers:
   - Default
   - TransparentFX
