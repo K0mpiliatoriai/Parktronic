@@ -9,6 +9,7 @@ TagManager:
   - explotion1
   - explotion2
   - Obstacle
+  - GameMusic
   layers:
   - Default
   - TransparentFX

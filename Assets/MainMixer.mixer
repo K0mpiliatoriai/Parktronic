@@ -67,5 +67,19 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 436a6a5ac504f074cb094c0940f9359a
   m_FloatValues:
-    cb775047fb4297546af55da7e439cc3b: 0
+    cb775047fb4297546af55da7e439cc3b: 0.08607428
   m_TransitionOverrides: {}
+--- !u!244 &8480152986645509040
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 9050838121a4b5e48b5d8f663c30a20e
+  m_EffectName: Receive
+  m_MixLevel: e2c4b1444f2b8af4e8e23d775cd53904
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

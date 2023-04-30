@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    
+    public AudioSource crashSound;
 
     public HealthBar healthBar;
 
@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
         if (collision.gameObject.tag == "Car")
         {
             TakeDamage(1);
-            
+            crashSound.Play();
         }
     }
 
