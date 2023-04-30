@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarScript : MonoBehaviour
 {
+    public AudioSource drivingSound;
     public Rigidbody2D myRigidBody;
     float driftFactor = 0.05f;
     public float  accelerationFactor = 5.0f;
@@ -22,9 +23,12 @@ public class CarScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         steeringInput = inputVector.x;
         accelerationInput = inputVector.y;
+        drivingSound.PlayDelayed(3);
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -42,6 +46,7 @@ public class CarScript : MonoBehaviour
     }
     void ApplyEngineForce()
     {
+        
         //calculate speed
         velocityVsUp = Vector2.Dot(transform.up, myRigidBody.velocity);
 
@@ -50,7 +55,8 @@ public class CarScript : MonoBehaviour
         {
             return;
         }
-
+       
+        
         //same in reverse
         if(velocityVsUp < -maxSpeed *0.5f && accelerationInput < 0)
         {

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CarManager : MonoBehaviour
 {
+    public AudioSource engineSound;
+    public AudioSource handbreakSound;
     public static bool IsGameFailed;
     public static bool isPClicked;
     public GameObject gameFailedScreen;
@@ -52,6 +54,7 @@ public class CarManager : MonoBehaviour
     }
     public void CompleteLevel()
     {
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         gameWonScreen.SetActive(false);
         healthBar.SetActive(false);
@@ -59,6 +62,8 @@ public class CarManager : MonoBehaviour
     }
     public void ParkCar()
     {
+        engineSound.Stop();
+        handbreakSound.Play();
         Time.timeScale = 0;
         gameWonScreen.SetActive(true);
         healthBar.SetActive(false);
