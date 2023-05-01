@@ -10,6 +10,7 @@ TagManager:
   - explotion2
   - Obstacle
   - GameMusic
+  - Collectable
   layers:
   - Default
   - TransparentFX

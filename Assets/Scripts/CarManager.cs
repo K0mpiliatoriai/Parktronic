@@ -19,6 +19,8 @@ public class CarManager : MonoBehaviour
     public static bool UpperRightPoint;
     public static bool LowerLeftPoint;
 
+    public static int CollectableCount = 0;
+
     private void Awake()
     {
         IsGameFailed = false;
