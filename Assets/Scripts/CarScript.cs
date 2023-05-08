@@ -10,7 +10,8 @@ public class CarScript : MonoBehaviour
     public float  accelerationFactor = 5.0f;
     public float turnFactor = 0.3f;
     public float maxSpeed = 10f;
-    public GameObject brakes;
+    public GameObject brakes1;
+    public GameObject brakes2;
 
     float accelerationInput = 0, steeringInput = 0, rotationAngle = 0, velocityVsUp = 0, velocity=0;
 
@@ -60,16 +61,19 @@ public class CarScript : MonoBehaviour
         //same in reverse
         if(velocityVsUp < -maxSpeed *0.5f && accelerationInput < 0)
         {
-            brakes.SetActive(true);
+            brakes1.SetActive(true);
+            brakes2.SetActive(true);
             return;
         }
         else
         {
-            brakes.SetActive(false);
+            brakes1.SetActive(false);
+            brakes2.SetActive(false);
         }
         if (accelerationInput < 0)
         {
-            brakes.SetActive(true);
+            brakes1.SetActive(true);
+            brakes2.SetActive(true);
         }
 
 
