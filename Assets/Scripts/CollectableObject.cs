@@ -18,7 +18,7 @@ public class CollectableObject : MonoBehaviour
         {
             Destroy(gameObject);
             CarManager.CollectableCount++;
-            collectablesText.text = "Wrenches: " + CarManager.CollectableCount;
+            collectablesText.text = "Collected: " + CarManager.CollectableCount;
         }
         StartCoroutine(Reset());
     }
