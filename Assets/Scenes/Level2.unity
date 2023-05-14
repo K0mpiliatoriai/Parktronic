@@ -77854,7 +77854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Wrenches: 0'
+  m_text: 'Collected: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fa32530532257647bb334fa8d539736, type: 2}
   m_sharedMaterial: {fileID: -2729174368263885575, guid: 8fa32530532257647bb334fa8d539736, type: 2}
