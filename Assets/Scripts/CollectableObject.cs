@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CollectableObject : MonoBehaviour
 {
+    public AudioSource collectableSound;
     [SerializeField] public TextMeshProUGUI collectablesText;
     private bool isColliding = false;
     public void OnTriggerEnter2D(Collider2D collision)
@@ -19,6 +20,7 @@ public class CollectableObject : MonoBehaviour
             Destroy(gameObject);
             CarManager.CollectableCount++;
             collectablesText.text = "Collected: " + CarManager.CollectableCount;
+            collectableSound.Play();
         }
         StartCoroutine(Reset());
     }
